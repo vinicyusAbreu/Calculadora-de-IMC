@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 62.5%;
+    --laranja: rgb(240, 104, 40);
+}
+
+main {
+    background-color: rgba(1, 0, 85, 0.74);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 30rem;
+    width: 30rem;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -1px 2px 14px -1px rgb(69, 8, 122);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="text"] {
+    width: 17rem;
+    height: 2.5rem;
+    border-radius: .2rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+button {
+    padding: .5rem 2rem .5rem 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(33, 47, 247);
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    border-radius: 1rem;
+}
+
+button:hover {
+    background-color: rgb(61, 122, 253);
+}
+
+.imc {
+    width: 17rem;
+    height: 3rem;
+    background-color: var(--laranja);
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.imc p {
+    font-size: 1.5rem;
+}
+
+.info {
+    width: 21rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 22rem;
+    }
+}
